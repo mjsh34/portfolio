@@ -3,9 +3,9 @@
   <head>
     <!-- Page setup -->
     <meta charset="utf-8">
-    <title>Your title here</title>
-    <meta name="description" content="A brief description of your site for search engines">
-    <meta name="author" content="Information about the author here">
+    <title>Shin, Myungjin</title>
+    <meta name="description" content="Personal website of MJ">
+    <meta name="author" content="Shin, Myungjin. Software developer and researcher.">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="icon" type="image/png" href="favicon.png">
   
@@ -26,54 +26,150 @@
   </head>
   
   <body>
-
     <header id="header">
-      <img src="logo.png">
-      <h1>Simple Website</h1>
+      <img src="static/img/logo_ld.png" id="logo">
+      <h1>Myungjin "MJ" Shin</h1>
       
       <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
-        <li><a href="#about">about</a></li>
-        <li><a href="#contact">contact</a></li>
+        <!-- <li><a href="#contact">contact</a></li> -->
       </ul>                 
     </header>
    
     <div id="container">
       <div class="inner">
         <div id="content"> 
-          
           <div id="home" class="content-region hide">
-            <h2>Home</h2>
             <p>
-              This is a simple website template published with Github Pages. <a href="https://github.com/zirafa/simple-website-template">Fork this repository</a> to create your own site!
+              My name is Myungjin. I am a developer/researcher with a keen interested in generative AI technologies and developing services
+              for them. I am currently attending Georgia Institute of Technology for Master's in Computer Science.
             </p>
-          </div>
-          
-          <div id="about" class="content-region hide">
-            <h2>About</h2>
-            <p>
-              Sed tempus urna et pharetra pharetra massa massa ultricies. Porttitor rhoncus dolor purus non enim praesent. Id aliquet risus feugiat in ante metus dictum. 
-            </p>
-          </div>
-          
-          <div id="contact" class="content-region hide">
+
+            <br>
+
+            <!-- Projects -->
+            <h2>Projects</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/kappa54m/ComfyUI_Usability">ComfyUI Usability</a>
+                is a collection of ComfyUI custom nodes intended to improve usability. Includes a node to load images with absolute path with previews.
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/Witchmacs">My Emacs configuration</a>
+                written in org-mode; based on <a href="https://github.com/snackon/Witchmacs">snackon/Witchmacs</a>
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/Ray-Tracing-in-One-Weekend">Ray Tracing in One Weekend</a>"
+                is a simple ray tracer written in C++. Based on the eponymous book by Peter Shirley.
+              </li>
+            </ul>
+            <h3>Web crawlers</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/mjsh34/Mallcrawlers">Mallcrawlers</a>
+                can scrape data from various online shopping websites.
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/irasutoya-scraper">Irasutoya Scraper</a>
+                can scrape stock images and descriptions from <a href="https://www.irasutoya.com/">いらすとや</a>.
+              </li>
+            </ul>
+
+            <br>
+
+            <!-- Research -->
+            <h2>Research</h2>
+            <ul>
+              <li>
+                <a href="https://mjsh34.github.io/mp-sspe/">Utilizing Task-Generic Motion Prior to Recover Full-Body Motion from Very Sparse Signals</a>
+                (<strong>Myungjin Shin</strong>, Dohae Lee, In-Kwon Lee):
+                Reconstruction of full body motion of a human given only signals from VR controllers and headset.
+              </li>
+              <li>
+                <a href="https://github.com/korguy/Concept-Diffusion">Semantic Guidance Tuning for Text-To-Image Diffusion Models</a>
+                (Hyun Kang, Dohae Lee, <strong>Myungjin Shin</strong>, In-Kwon Lee):
+                Novel sampling method for text-to-image latent diffusion models aligning image generation closer to prompt.
+              </li>
+            </ul>
+
+            <br>
+
+            <!-- Learning & Teaching -->
+            <h2>Learning and Teaching</h2>
+            <ul>
+             <li>
+               <a href="https://github.com/mjsh34/minbpe">minBPE</a>
+               implements byte-pair encoding typically used in the tokenization step of LLMs.
+               <br>Minimal implementation of GPT included in repository.
+             </li>
+            </ul>
+            <h3>Seminars</h3>
+            <ul>
+              <li>
+                <a href="static/seminars/NeRF.pdf">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>
+              </li>
+              <li>
+                <a href="static/seminars/Animatable Human Rendering.pdf">Learning Motion-Dependent Appearance for High-Fidelity Rendering of Dynamic Humans from a Single Camera</a>
+              </li>
+              <li>
+                <a href="static/seminars/On the Spectral Bias of Neural Networks.pdf">On the Spectral Bias of Neural Networks</a>
+              </li>
+              <li>
+                <a href="static/seminars/MotionDiffuse.pdf">MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model</a>
+              </li>
+              <li>
+                <a href="static/seminars/What the DAAM Interpreting Stable Diffusion Using Cross Attention.pdf">
+                  What the DAAM: Interpreting Stable Diffusion Using Cross Attention</a>
+              </li>
+              <li>
+                <a href="static/seminars/MoGlow.pdf">MoGlow: Probabilistic and controllable motion synthesis using normalising flows</a>
+              </li>
+            </ul>
+
+
+            <!-- Open Source Contributions -->
+             <!-- TODO -->
+
+            <br><br>
+
+            <!-- Contact -->
             <h2>Contact</h2>
-            <p>
-              Pellentesque nec nam aliquam sem et tortor consequat. Quisque sagittis purus sit amet volutpat consequat. Magna eget est lorem ipsum dolor. 
-            </p>
+            <ul>
+              <li>mshin90 <i>at</i> gatech <i>dot</i> edu</li>
+              <li><a href="https://github.com/kappa54m">https://github.com/kappa54m</a></li>
+              <li><a href="https://github.com/mjsh34">https://github.com/mjsh34</a></li>
+            </ul>
+
           </div>
+
+          
+          <!-- TODO background gets messed up -->
+          <!-- <div id="contact" class="content-region hide">
+            <h2>Contact</h2>
+            <ul>
+              <li>mshin90 <i>at</i> gatech <i>dot</i> edu</li>
+              <li><a href="https://github.com/kappa54m">https://github.com/kappa54m</a></li>
+              <li><a href="https://github.com/mjsh34">https://github.com/mjsh34</a></li>
+            </ul>
+            <p>
+              
+            </p>
+          </div> -->
           
         </div>
       </div>
     </div>
 
     <footer>  
-      Footer region
+      Website template by https://github.com/zirafa
+      <br>
+      Background generated with Stable Diffusion XL
     </footer>
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
     
   </body>
+
 </html>
