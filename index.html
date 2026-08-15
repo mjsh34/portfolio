@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Page setup -->
+    <meta charset="utf-8">
+    <title>Shin, Myungjin's website</title>
+    <meta name="description" content="Personal website of MJ">
+    <meta name="author" content="Shin, Myungjin. Software developer and researcher.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+  
+    <!-- Stylesheets -->
+    <!-- Reset default styles and add support for google fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+   
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
+
+    <!-- Want to add Bootstrap? -->
+    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
+    
+  </head>
+  
+  <body>
+    <header id="header">
+      <img src="static/img/logo_ld.png" id="logo" alt="Lambda Delta">
+      <h1>Myungjin "MJ" Shin</h1>
+      
+      <!-- Menu link fragment #id should match a div id. Example: <a href="#home"> links to <div id="home"></div>  -->
+      <ul class="main-menu">
+        <li><a href="#home">home</a></li>
+        <!-- <li><a href="#contact">contact</a></li> -->
+      </ul>                 
+    </header>
+   
+    <div id="container">
+      <div class="inner">
+        <div id="content"> 
+          <div id="home" class="content-region hide">
+            <p>
+              I am a software developer and a graphics/AI researcher from South Korea
+              with a keen interest in generative AI technologies and in developing related services.
+              <br>
+              I am currently working as a Software Engineear at Amazon Web Services in EC2 Networking.
+            </p>
+
+            <br>
+            <p><a href="https://www.linkedin.com/in/myungjin-shin-407619310/">LinkedIn</a></p>
+            <p><a href="static/files/Resume.pdf">Resume/CV</a></p>
+            <br>
+
+            <!-- Projects -->
+            <h2>Projects</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/kappa54m/audiobookutils">audiobookutils</a>
+                is a program that can synchronize ebooks with raw audiobook readings, as EPUB 3 read aloud books or subtitles (synchronized with input audiobook reading).
+              </li>
+              <li>
+                <a href="https://github.com/lambdadt/Topic-Modeling-VIP-EEBO-TCP-Collections-Navigations">Georgia Tech VIP: Unlocking and Analyzing Historical Texts - Topic Modeling of EEBO-TCP Data</a>
+                explores themes and relationships in early English texts using topic modeling algorithms (<a href="https://github.com/lambdadt/Topic-Modeling-VIP-EEBO-TCP-Collections-Navigations/blob/master/docs/reports/202501_Summary%20Report.pdf">Report</a>).
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/ComfyUI_Usability">ComfyUI Usability</a>
+                is a collection of ComfyUI custom nodes intended to improve usability. Includes a node to load images with absolute path with previews.
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/Witchmacs">My Emacs configuration</a>
+                written in org-mode; based on <a href="https://github.com/snackon/Witchmacs">snackon/Witchmacs</a>
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/Ray-Tracing-in-One-Weekend">Ray Tracing in One Weekend</a>
+                is a simple ray tracer written in C++. Based on the eponymous book by Peter Shirley.
+              </li>
+            </ul>
+            <h3>Web crawlers</h3>
+            <ul>
+              <li>
+                <a href="https://github.com/mjsh34/Mallcrawlers">Mallcrawlers</a>
+                can scrape data from various online shopping malls.
+              </li>
+              <li>
+                <a href="https://github.com/kappa54m/irasutoya-scraper">Irasutoya Scraper</a>
+                can scrape stock images and corresponding descriptions from <a href="https://www.irasutoya.com/">いらすとや</a>.
+              </li>
+            </ul>
+
+            <br>
+
+            <!-- Research -->
+            <h2>Research</h2>
+            <ul>
+              <li>
+                <a href="https://mjsh34.github.io/mp-sspe/">Utilizing Task-Generic Motion Prior to Recover Full-Body Motion from Very Sparse Signals</a>
+                (<strong>Myungjin Shin</strong>, Dohae Lee, In-Kwon Lee):
+                Reconstruction of full body motion of a human given only signals from VR controllers and headset.
+                Lead the research developing and implementing core algorithms and writing the paper.
+              </li>
+              <li>
+                <a href="https://github.com/korguy/Concept-Diffusion">Semantic Guidance Tuning for Text-To-Image Diffusion Models</a>
+                (Hyun Kang, Dohae Lee, <strong>Myungjin Shin</strong>, In-Kwon Lee):
+                Novel sampling method for text-to-image latent diffusion models aligning image generation closer to prompt.
+                I contributed to development of the algorithm, hyperparameter optimization and development of the ComfyUI model.
+              </li>
+            </ul>
+
+            <br>
+
+            <!-- Learning & Teaching -->
+            <h2>Learning and Teaching</h2>
+            <ul>
+             <li>
+               <a href="https://github.com/mjsh34/minbpe">minBPE</a>
+               implements byte-pair encoding typically used in the tokenization step of LLMs.
+               <br>Minimal implementation of GPT included in repository.
+             </li>
+            </ul>
+            <h3>Seminars</h3>
+            <ul>
+              <li>
+                <a href="static/seminars/NeRF.pdf">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>
+              </li>
+              <li>
+                <a href="static/seminars/Animatable Human Rendering.pdf">Learning Motion-Dependent Appearance for High-Fidelity Rendering of Dynamic Humans from a Single Camera</a>
+              </li>
+              <li>
+                <a href="static/seminars/On the Spectral Bias of Neural Networks.pdf">On the Spectral Bias of Neural Networks</a>
+              </li>
+              <li>
+                <a href="static/seminars/MotionDiffuse.pdf">MotionDiffuse: Text-Driven Human Motion Generation with Diffusion Model</a>
+              </li>
+              <li>
+                <a href="static/seminars/What the DAAM Interpreting Stable Diffusion Using Cross Attention.pdf">
+                  What the DAAM: Interpreting Stable Diffusion Using Cross Attention</a>
+              </li>
+              <li>
+                <a href="static/seminars/MoGlow.pdf">MoGlow: Probabilistic and controllable motion synthesis using normalising flows</a>
+              </li>
+            </ul>
+
+            <h3>Learning</h3>
+            <ul>
+              <li>Completed <a href="https://huggingface.co/learn/deep-rl-course/">Hugging Face Deep Reinforcement Learning Course</a>: <a href="static/files/Hugging Face Deep Reinforcement Learning - certificate.pdf">Certificate</a></li>
+              <li>Completed <a href="https://huggingface.co/learn/mcp-course/">Hugging Face MCP Course</a>
+              <li>Completed <a href="https://www.codepath.org/courses/applied-ai-engineering">[CodePath] AI201 | Applications of AI Engineering</a>
+            </ul>
+
+
+            <br>
+            <!-- Open Source Contributions -->
+            <h2>Open Source Contributions</h2>
+            <ul>
+              <li>
+                <a href="https://github.com/godotengine/godot">Godot Engine</a> (bug fix): Fixed a bug with C# binding.
+              </li>
+              <li>
+                <a href="https://github.com/jhc13/taggui">TagGUI</a> (feature implementation): Option to turn off autocomplete,
+                which can help in tasks like creating an OCR dataset where most "tags" are unique by shortening input delay.
+              </li>
+              <li>
+                <a href="https://github.com/THUDM/ImageReward">ImageReward</a> (bug fix):
+                Fixed a bug with Stable Diffusion WebUI plugin not displaying text after update.
+              </li>
+            </ul>
+             <!-- TODO -->
+
+
+
+            <br>
+            <!-- Interests -->
+            <h2>Interests</h2>
+            <p>I have interests in...</p>
+            <ul>
+              <li>Developing video games and making music</li>
+              <li>Using GNU/Linux for servers and desktop</li>
+              <li>Reading old English books</li>
+              <li>The Japanese culture and language</li>
+            </ul>
+
+            <br><br>
+
+            <!-- Contact -->
+            <h2>Contact</h2>
+            <ul>
+              <li>mshin90 <i>at</i> gatech <i>dot</i> edu</li>
+              <li><a href="https://github.com/kappa54m">https://github.com/kappa54m</a></li>
+              <li><a href="https://github.com/mjsh34">https://github.com/mjsh34</a></li>
+            </ul>
+
+          </div>
+
+          
+          <!-- TODO background gets messed up -->
+          <!-- <div id="contact" class="content-region hide">
+            <h2>Contact</h2>
+            <ul>
+              <li>mshin90 <i>at</i> gatech <i>dot</i> edu</li>
+              <li><a href="https://github.com/kappa54m">https://github.com/kappa54m</a></li>
+              <li><a href="https://github.com/mjsh34">https://github.com/mjsh34</a></li>
+            </ul>
+            <p>
+              
+            </p>
+          </div> -->
+          
+        </div>
+      </div>
+    </div>
+
+    <footer>  
+      Website template by https://github.com/zirafa
+      <br>
+      Background generated with Stable Diffusion XL
+    </footer>
+    
+    <!-- Load additional JS scripts here -->
+    <script type="text/javascript" src="script.js"></script>
+    
+  </body>
+
+</html>
